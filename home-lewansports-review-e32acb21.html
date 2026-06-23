@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乐玩体育 – 稳定体验 随时开启</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #f9fafc;
+            color: #2c3e50;
+            line-height: 1.7;
+        }
+        a {
+            color: #d33f3f; /* 强调色 */
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+        a:hover { border-bottom-color: #d33f3f; }
+
+        /* ===== Hero 深色区 ===== */
+        .hero {
+            background: #0d1b2a; /* 深色头图 */
+            padding: 5rem 2rem 4rem;
+            text-align: center;
+            color: #e6edf5;
+        }
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.15rem;
+            max-width: 640px;
+            margin: 0 auto 2rem;
+            opacity: 0.85;
+        }
+        .hero .tagline {
+            background: rgba(255,255,255,0.05);
+            display: inline-block;
+            padding: 0.4rem 1.4rem;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            color: #bac8db;
+        }
+
+        /* ===== 浅色正文区 ===== */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem;
+        }
+
+        /* 优势区 — 三卡片 */
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.8rem;
+            justify-content: center;
+            margin-bottom: 3rem;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 2rem 1.6rem;
+            flex: 1 1 260px;
+            max-width: 340px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.03), 0 2px 6px rgba(0,0,0,0.04);
+            transition: transform 0.15s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 28px rgba(0,0,0,0.05);
+        }
+        .card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.6rem;
+            color: #1a2636;
+            font-weight: 500;
+        }
+        .card p {
+            font-size: 0.98rem;
+            color: #4b5a6c;
+        }
+
+        /* 说明区 */
+        .intro-section {
+            background: #ffffff;
+            border-radius: 22px;
+            padding: 2.8rem 2.2rem;
+            margin-bottom: 2.8rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.02);
+        }
+        .intro-section h2 {
+            font-size: 1.8rem;
+            font-weight: 400;
+            margin-bottom: 1.2rem;
+            color: #0d1b2a;
+            letter-spacing: 1px;
+        }
+        .intro-section p {
+            margin-bottom: 1.1rem;
+            font-size: 1.02rem;
+        }
+
+        /* FAQ 摘要 */
+        .faq-summary {
+            background: #ffffff;
+            border-radius: 22px;
+            padding: 2.6rem 2.2rem;
+            margin-bottom: 2.8rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.02);
+        }
+        .faq-summary h2 {
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin-bottom: 1.6rem;
+            color: #0d1b2a;
+        }
+        .faq-item {
+            padding: 1rem 0;
+            border-bottom: 1px solid #e9edf2;
+        }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item strong {
+            display: block;
+            font-weight: 500;
+            color: #1f2b3b;
+            margin-bottom: 0.2rem;
+        }
+        .faq-item span {
+            font-size: 0.98rem;
+            color: #4f6179;
+        }
+
+        /* 底部链接 */
+        .footer-links {
+            text-align: center;
+            padding: 2.2rem 1rem 3.5rem;
+            border-top: 1px solid #dce2ea;
+            margin-top: 1.2rem;
+        }
+        .footer-links p {
+            font-size: 0.95rem;
+            color: #5d6f84;
+            margin-bottom: 0.5rem;
+        }
+        .footer-links .link-highlight {
+            font-size: 1.1rem;
+        }
+
+        /* 响应式 */
+        @media (max-width: 660px) {
+            .hero { padding: 3.2rem 1.2rem 2.8rem; }
+            .hero h1 { font-size: 1.8rem; }
+            .intro-section, .faq-summary { padding: 1.8rem 1.2rem; }
+            .container { padding: 1.5rem 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+    <span class="tagline">体育 · 稳定 · 陪伴</span>
+    <h1>乐玩体育</h1>
+    <p>无论是日常资讯还是深度内容，一个可信赖的入口让你更专注。<br>从这里开始，体验流畅的节奏与一致的界面。</p>
+</section>
+
+<!-- ===== 正文容器 ===== -->
+<div class="container">
+
+    <!-- 优势卡片 -->
+    <div class="cards">
+        <div class="card">
+            <h3>稳定入口</h3>
+            <p>直达核心页面，减少跳转干扰。每一次开启都能快速定位所需内容，保持浏览的连贯性。</p>
+        </div>
+        <div class="card">
+            <h3>清晰结构</h3>
+            <p>从导航到内容区域，均采用直观布局。即便初次使用，也能在短时间理解板块逻辑。</p>
+        </div>
+        <div class="card">
+            <h3>持续适配</h3>
+            <p>页面针对不同屏幕尺寸进行优化，在手机、平板、桌面端均保持舒适的阅读体验。</p>
+        </div>
+    </div>
+
+    <!-- 说明区 -->
+    <div class="intro-section">
+        <h2>关于这个站点</h2>
+        <p>体育内容的价值在于稳定与可靠。当你想快速浏览赛事消息、专题报道或社区讨论时，一个简洁且一致的入口能节省大量时间。<a href="https://home-lewansports.com">乐玩体育</a>正是基于这样的想法设计：将常用的功能与信息整合在明确的位置，让你把精力花在内容本身，而不是在页面间反复跳转。</p>
+        <p>页面采用分区式结构，每个模块都有清晰的边界和标题。无论是阅读最新动态，还是回顾历史专题，都能通过顶部或侧边导航快速切换。我们相信，好的入口不需要过多修饰，流畅与稳定本身就是效率。</p>
+    </div>
+
+    <!-- FAQ 摘要 -->
+    <div class="faq-summary">
+        <h2>常见疑问 · 摘要</h2>
+        <div class="faq-item">
+            <strong>如何开始使用？</strong>
+            <span>直接通过浏览器访问 <a href="https://home-lewansports.com">乐玩体育</a>，无需注册或下载。页面所有内容均可免费浏览。</span>
+        </div>
+        <div class="faq-item">
+            <strong>页面加载速度如何？</strong>
+            <span>站点采用轻量化设计，资源经过压缩处理，在常规网络环境下可快速呈现。移动端同样经过适配。</span>
+        </div>
+        <div class="faq-item">
+            <strong>是否支持夜间模式？</strong>
+            <span>目前页面默认使用浅色背景，阅读区对比度适宜，长时间浏览不易疲劳。未来会根据反馈逐步优化。</span>
+        </div>
+        <div class="faq-item">
+            <strong>如何反馈建议？</strong>
+            <span>你可以在页面底部找到联系方式，或通过社区渠道告知我们。每一份反馈都会认真对待。</span>
+        </div>
+    </div>
+
+</div>
+
+<!-- ===== 底部链接 ===== -->
+<div class="footer-links">
+    <p>如果你正在寻找一个结构清晰、访问顺畅的体育内容入口，不妨从</p>
+    <p class="link-highlight"><a href="https://home-lewansports.com">乐玩体育</a> 开始你的浏览。</p>
+    <p style="margin-top: 1.2rem; font-size: 0.85rem; color: #7c8ea3;">© 提供稳定体验 · 页面仅供示意</p>
+</div>
+
+</body>
+</html>
